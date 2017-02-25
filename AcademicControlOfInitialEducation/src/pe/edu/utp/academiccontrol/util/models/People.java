@@ -1,19 +1,36 @@
 package pe.edu.utp.academiccontrol.util.models;
 
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  * Created by walbe on 20/02/2017.
  */
 public class People {
     private int idPeople;
+    private String user;
     private String password;
     private String name;
     private String father_lastname;
     private String mother_lastname;
-    private int dni;
+    private String dni;
     private String born_date;
-    private String pictura;
+    private String picture;
 
-    public People () {
+    public People(int idPerson, String user, String password, String name, String father_lastname, String string, String dni, Date born_date, String picture) {
+    }
+
+    public People(int idPeople, String user, String password, String name, String father_lastname, String mother_lastname, String dni, String born_date, String picture) {
+        this.idPeople = idPeople;
+        this.user = user;
+        this.password = password;
+        this.name = name;
+        this.father_lastname = father_lastname;
+        this.mother_lastname = mother_lastname;
+        this.dni = dni;
+        this.born_date = born_date;
+        this.picture = picture;
     }
 
     public int getIdPeople() {
@@ -22,6 +39,14 @@ public class People {
 
     public void setIdPeople(int idPeople) {
         this.idPeople = idPeople;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getPassword() {
@@ -56,11 +81,11 @@ public class People {
         this.mother_lastname = mother_lastname;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
@@ -72,11 +97,28 @@ public class People {
         this.born_date = born_date;
     }
 
-    public String getPictura() {
-        return pictura;
+    public String getPicture() {
+        return picture;
     }
 
-    public void setPictura(String pictura) {
-        this.pictura = pictura;
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public static People build(ResultSet resultSet) {
+        try {
+            return new People(resultSet.getInt("idPerson"),
+                    resultSet.getString("user"),
+                    resultSet.getString("password"),
+                    resultSet.getString("name"),
+                    resultSet.getString("father_lastname"),
+                    resultSet.getString("mmother:lastname"),
+                    resultSet.getString("dni"),
+                    resultSet.getDate("born_date"),
+                    resultSet.getString("picture"));
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
