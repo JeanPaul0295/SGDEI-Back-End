@@ -8,5 +8,8 @@ public class Qualification {
     private String month;
     //TODO: VINCULAR CON LA TABLA SUBJECT
     private double qualifications;
-    //TODO: VINCULAR CON INSTITUTION_ID
+    private Institution intitution;
+
+    public Qualification() {
+    }
 }
