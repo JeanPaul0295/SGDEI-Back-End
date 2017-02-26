@@ -2,11 +2,12 @@ package pe.edu.utp.academiccontrol.util.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 /**
  * Created by Administrador on 25/02/2017.
  */
 public class Institution {
-    private int idInstitution;
+    private int id;
     private String name;
     private String label;
     private String description;
@@ -15,26 +16,28 @@ public class Institution {
     private String address;
     private String picture;
 
+
     public Institution() {
     }
 
-    public Institution(int idInstitution, String name, String label, String description, String tradename, String ruc, String address, String picture) {
-        this.idInstitution = idInstitution;
-        this.name = name;
-        this.label = label;
-        this.description = description;
-        this.tradename = tradename;
-        this.ruc = ruc;
-        this.address = address;
-        this.picture = picture;
+    public Institution(int id, String name, String label, String description, String tradename, String ruc, String address, String picture) {
+        this.setId(id);
+        this.setName(name);
+        this.setLabel(label);
+        this.setDescription(description);
+        this.setTradename(tradename);
+        this.setRuc(ruc);
+        this.setAddress(address);
+        this.setPicture(picture);
     }
 
-    public int getIdInstitution() {
-        return idInstitution;
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdInstitution(int idInstitution) {
-        this.idInstitution = idInstitution;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -95,7 +98,7 @@ public class Institution {
 
     public static Institution build(ResultSet resultSet) {
         try {
-            return new Institution(resultSet.getInt("idCourse"),
+            return new Institution(resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("label"),
                     resultSet.getString("description"),
