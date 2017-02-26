@@ -2,9 +2,8 @@ package pe.edu.utp.academiccontrol.util.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 /**
- * Created by walbe on 20/02/2017.
+ * Created by Administrador on 25/02/2017.
  */
 public class Institution {
     private int idInstitution;
@@ -96,7 +95,7 @@ public class Institution {
 
     public static Institution build(ResultSet resultSet) {
         try {
-            return new Institution (resultSet.getInt("idCourse"),
+            return new Institution(resultSet.getInt("idCourse"),
                     resultSet.getString("name"),
                     resultSet.getString("label"),
                     resultSet.getString("description"),
