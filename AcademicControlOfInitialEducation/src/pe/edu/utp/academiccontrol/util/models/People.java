@@ -8,37 +8,38 @@ import java.sql.SQLException;
  * Created by walbe on 20/02/2017.
  */
 public class People {
-    private int idPeople;
+    private int id;
     private String user;
     private String password;
     private String name;
-    private String father_lastname;
-    private String mother_lastname;
+    private String fatherLastname;
+    private String motherLastname;
     private String dni;
-    private String born_date;
+    private Date born_date;
     private String picture;
 
-    public People(int idPerson, String user, String password, String name, String father_lastname, String string, String dni, Date born_date, String picture) {
+    public People() {
     }
 
-    public People(int idPeople, String user, String password, String name, String father_lastname, String mother_lastname, String dni, String born_date, String picture) {
-        this.idPeople = idPeople;
+    public People(int id, String user, String password, String name, String fatherLastname, String motherLastname, String dni, Date born_date, String picture) {
+        this.id = id;
         this.user = user;
         this.password = password;
         this.name = name;
-        this.father_lastname = father_lastname;
-        this.mother_lastname = mother_lastname;
+        this.setFatherLastname(fatherLastname);
+        this.setMotherLastname(motherLastname);
         this.dni = dni;
         this.born_date = born_date;
         this.picture = picture;
     }
 
-    public int getIdPeople() {
-        return idPeople;
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdPeople(int idPeople) {
-        this.idPeople = idPeople;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUser() {
@@ -65,20 +66,21 @@ public class People {
         this.name = name;
     }
 
-    public String getFather_lastname() {
-        return father_lastname;
+
+    public String getFatherLastname() {
+        return fatherLastname;
     }
 
-    public void setFather_lastname(String father_lastname) {
-        this.father_lastname = father_lastname;
+    public void setFatherLastname(String fatherLastname) {
+        this.fatherLastname = fatherLastname;
     }
 
-    public String getMother_lastname() {
-        return mother_lastname;
+    public String getMotherLastname() {
+        return motherLastname;
     }
 
-    public void setMother_lastname(String mother_lastname) {
-        this.mother_lastname = mother_lastname;
+    public void setMotherLastname(String motherLastname) {
+        this.motherLastname = motherLastname;
     }
 
     public String getDni() {
@@ -89,11 +91,11 @@ public class People {
         this.dni = dni;
     }
 
-    public String getBorn_date() {
+    public Date getBorn_date() {
         return born_date;
     }
 
-    public void setBorn_date(String born_date) {
+    public void setBorn_date(Date born_date) {
         this.born_date = born_date;
     }
 
@@ -107,12 +109,12 @@ public class People {
 
     public static People build(ResultSet resultSet) {
         try {
-            return new People(resultSet.getInt("idPerson"),
+            return new People(resultSet.getInt("id"),
                     resultSet.getString("user"),
                     resultSet.getString("password"),
                     resultSet.getString("name"),
-                    resultSet.getString("father_lastname"),
-                    resultSet.getString("mmother:lastname"),
+                    resultSet.getString("fatherLastname"),
+                    resultSet.getString("mmotherLastname"),
                     resultSet.getString("dni"),
                     resultSet.getDate("born_date"),
                     resultSet.getString("picture"));
@@ -121,4 +123,5 @@ public class People {
             return null;
         }
     }
+
 }
