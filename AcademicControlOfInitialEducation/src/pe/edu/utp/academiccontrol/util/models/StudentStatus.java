@@ -4,20 +4,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by walbe on 25/02/2017.
+ * Created by Administrador on 25/02/2017.
  */
-public class Degree {
+public class StudentStatus {
     private int id;
     private String name;
     private String label;
 
-    public Degree() {
+    public StudentStatus() {
     }
 
-    public Degree(int id, String name, String label) {
-        this.id = id;
-        this.name = name;
-        this.label = label;
+    public StudentStatus(int id, String name, String label) {
+        this.setId(id);
+        this.setName(name);
+        this.setLabel(label);
     }
 
     public int getId() {
@@ -44,9 +44,9 @@ public class Degree {
         this.label = label;
     }
 
-    public static Degree build(ResultSet resultSet) {
+    public static RequestStatus build(ResultSet resultSet) {
         try {
-            return new Degree(resultSet.getInt("id"),
+            return new RequestStatus(resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("label"));
         } catch (SQLException e) {

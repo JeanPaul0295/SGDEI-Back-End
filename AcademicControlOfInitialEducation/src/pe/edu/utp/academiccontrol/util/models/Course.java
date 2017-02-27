@@ -6,30 +6,30 @@ import java.sql.SQLException;
  * Created by Admin on 2/20/2017.
  */
 public class Course {
-    private int idCourse;
+    private int id;
     private String name;
     private String label;
     private String description;
-    //TODO: En DB esta declarado como int, el peso puede ser decimal ver si se modifica
     private double weight_exam;
 
-    public Course(int course, String string, String password) {
+    public Course() {
     }
 
-    public Course(int idCourse, String name, String label, String description, double weight_exam) {
-        this.idCourse = idCourse;
+    public Course(int id, String name, String label, String description, double weight_exam) {
+        this.id = id;
         this.name = name;
         this.label = label;
         this.description = description;
         this.weight_exam = weight_exam;
     }
 
-    public int getIdCourse() {
-        return idCourse;
+
+    public int getId() {
+        return id;
     }
 
-    public void setIdCourse(int idCourse) {
-        this.idCourse = idCourse;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -66,7 +66,7 @@ public class Course {
 
     public static Course build(ResultSet resultSet) {
         try {
-            return new Course(resultSet.getInt("idCourse"),
+            return new Course(resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("label"),
                     resultSet.getString("description"),
