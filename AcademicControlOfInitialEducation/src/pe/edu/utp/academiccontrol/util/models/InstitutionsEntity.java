@@ -94,7 +94,7 @@ public class InstitutionsEntity extends BaseEntity {
                 "' ruc = '" + institution.getRuc() +
                 "' address = '" + institution.getAddress() +
                 "' picture = '" + institution.getPicture() +
-                "' WHERE idInstitution = " + String.valueOf(institution.getIdInstitution())) > 0;
+                "' WHERE idInstitution = " + String.valueOf(institution.getId())) > 0;
     }
 
     public boolean delete(int id) {
