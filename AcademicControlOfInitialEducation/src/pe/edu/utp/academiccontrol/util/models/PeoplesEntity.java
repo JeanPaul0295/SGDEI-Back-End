@@ -47,6 +47,7 @@ public class PeoplesEntity extends BaseEntity {
         List<People> peoples = findByCriteria(DEFAULT_SQL + " WHERE name = '" + name + "'");
         return (peoples.isEmpty()) ? null : peoples.get(0);
     }
+
     //TODO: Consult if is necesary implement this function in all entities
     /*
     private int getMaxId() {
@@ -81,7 +82,8 @@ public class PeoplesEntity extends BaseEntity {
                     if(results > 0) {
                         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
                         Date br_date = df.parse(born_date);
-                        People people = new People(id, user, password, name, father_lastname, mother_lastname, dni, br_date, picture);
+                        java.sql.Date sqlDate = new java.sql.Date(br_date.getTime());
+                        People people = new People(id, user, password, name, father_lastname, mother_lastname, dni, sqlDate, picture);
                         return people;
                     }
                 } catch (SQLException|ParseException e) {
@@ -92,22 +94,28 @@ public class PeoplesEntity extends BaseEntity {
         return null;
     }
 
-    public People create(String user, String password, String name, String father_lastname, String mother_lastname, String dni, String born_date, String picture) {
-        if(findByName(name) == null) {
-            if(getConnection() != null) {
-                String sql = "INSERT INTO people(user, password, name, father_lastname, mother_lastname, dni, born_date, picture) VALUES(" +
-                        String.valueOf(user + ", '" + password + ", '" + name + ", '" + father_lastname + ", '" + mother_lastname + ", '" + dni + ", '" + born_date + ", '" + picture + "')");
-                try {
-                    int results = getConnection().createStatement().executeUpdate(sql);
-                    if(results > 0) {
-                        People people = new People(user, password, name, father_lastname, mother_lastname, dni, born_date, picture);
-                        return people;
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+    public boolean update(People people) {
+        return updateByCriteria("UPDATE people SET name = '" +
+                people.getName() + "' father_lastname = '" +
+                people.getFatherLastname() + "' mother_lastname = '" +
+                people.getMotherLastname() + "' dni = '" +
+                people.getDni() + "' born_date = '" +
+                people.getBorn_date() + "' WHERE region_id = " + String.valueOf(people.getId())) > 0;
+    }
+
+    private int updateByCriteria(String sql) {
+        if(getConnection() != null) {
+            try {
+                return getConnection().createStatement().executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
-        return null;
+        return 0;
+    }
+
+    public boolean delete(String name) {
+        return updateByCriteria("DELETE FROM people WHERE name = '"+
+                name + "'") > 0;
     }
 }
