@@ -1,4 +1,4 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -44,9 +44,9 @@ public class StudentStatus {
         this.label = label;
     }
 
-    public static RequestStatus build(ResultSet resultSet) {
+    public static StudentStatus build(ResultSet resultSet) {
         try {
-            return new RequestStatus(resultSet.getInt("id"),
+            return new StudentStatus(resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("label"));
         } catch (SQLException e) {

@@ -1,5 +1,9 @@
 package pe.edu.utp.academiccontrol.models;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Date;
+
 /**
  * Created by Administrador on 03/03/2017.
  */
@@ -8,26 +12,27 @@ public class Institution {
     private String name;
     private String label;
     private String description;
-    private String tradename;
     private String ruc;
     private String address;
+    private Date registry;
+    private Boolean status;
     private String picture;
 
 
     public Institution() {
     }
 
-    public Institution(int id, String name, String label, String description, String tradename, String ruc, String address, String picture) {
+    public Institution(int id, String name, String label, String description, String ruc, String address, Date registry, Boolean status, String picture) {
         this.setId(id);
         this.setName(name);
         this.setLabel(label);
         this.setDescription(description);
-        this.setTradename(tradename);
         this.setRuc(ruc);
         this.setAddress(address);
+        this.setRegistry(registry);
+        this.setStatus(status);
         this.setPicture(picture);
     }
-
 
     public int getId() {
         return id;
@@ -61,14 +66,6 @@ public class Institution {
         this.description = description;
     }
 
-    public String getTradename() {
-        return tradename;
-    }
-
-    public void setTradename(String tradename) {
-        this.tradename = tradename;
-    }
-
     public String getRuc() {
         return ruc;
     }
@@ -85,6 +82,22 @@ public class Institution {
         this.address = address;
     }
 
+    public Date getRegistry() {
+        return registry;
+    }
+
+    public void setRegistry(Date registry) {
+        this.registry = registry;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
     public String getPicture() {
         return picture;
     }
@@ -99,9 +112,10 @@ public class Institution {
                     resultSet.getString("name"),
                     resultSet.getString("label"),
                     resultSet.getString("description"),
-                    resultSet.getString("tradename"),
                     resultSet.getString("ruc"),
                     resultSet.getString("address"),
+                    resultSet.getDate("register_date"),
+                    resultSet.getBoolean("status"),
                     resultSet.getString("picture"));
         } catch (SQLException e) {
             e.printStackTrace();

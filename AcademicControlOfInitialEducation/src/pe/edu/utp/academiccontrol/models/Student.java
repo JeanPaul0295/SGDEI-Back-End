@@ -1,4 +1,4 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,30 +9,22 @@ import java.util.Date;
  */
 public class Student {
     private int id;
-    private People people;
-    private String address;
-    private String sex;
+    private Person person;
     private StudentStatus status;
     private Date registry;
-    private Degree degree;
-    private String academicYear;
-    private String picture;
+    private String degree;
     private Institution institution;
 
     public Student() {
     }
 
-    public Student(int id, /*People people,*/ String address, String sex, /*StudentStatus status,*/ Date registry, /*Degree degree,*/ String academicYear, String picture/*, Institution institution*/) {
-        this.setId(id);
-        //this.setPeople(people);
-        this.setAddress(address);
-        this.setSex(sex);
-        //this.setStatus(status);
-        this.setRegistry(registry);
-        //this.setDegree(degree);
-        this.setAcademicYear(academicYear);
-        this.setPicture(picture);
-        //this.setInstitution(institution);
+    public Student(int id, /*Person person, StudentStatus status,*/ Date registry, String degree/*, Institution institution*/) {
+        this.id = id;
+        //this.person = person;
+        //this.status = status;
+        this.registry = registry;
+        this.degree = degree;
+        //this.institution = institution;
     }
 
     public int getId() {
@@ -43,28 +35,12 @@ public class Student {
         this.id = id;
     }
 
-    public People getPeople() {
-        return people;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setPeople(People people) {
-        this.people = people;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public StudentStatus getStatus() {
@@ -83,28 +59,12 @@ public class Student {
         this.registry = registry;
     }
 
-    public Degree getDegree() {
+    public String getDegree() {
         return degree;
     }
 
-    public void setDegree(Degree degree) {
+    public void setDegree(String degree) {
         this.degree = degree;
-    }
-
-    public String getAcademicYear() {
-        return academicYear;
-    }
-
-    public void setAcademicYear(String academicYear) {
-        this.academicYear = academicYear;
-    }
-
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
     }
 
     public Institution getInstitution() {
@@ -118,16 +78,8 @@ public class Student {
     public static Student build(ResultSet resultSet) {
         try {
             return new Student(resultSet.getInt("id"),
-                    resultSet.getString("address"),
-                    resultSet.getString("sex"),
-                    resultSet.getDate("registry"),
-                    resultSet.getString("academicYear"),
-                    resultSet.getString("picture"));
-                    //TODO:Implement getPersonEntity
-                    //TODO:Implement getStudentStatusEntity
-                    //TODO:Implement getDegreeEntity
-                    //TODO:Implement getInstitutionEntity
-
+                    resultSet.getDate("register_date"),
+                    resultSet.getString("degree"));
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
