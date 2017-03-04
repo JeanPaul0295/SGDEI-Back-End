@@ -1,10 +1,7 @@
-package pe.edu.utp.academiccontrol.util.models;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package pe.edu.utp.academiccontrol.models;
 
 /**
- * Created by Administrador on 25/02/2017.
+ * Created by Administrador on 03/03/2017.
  */
 public class Institution {
     private int id;
