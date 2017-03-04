@@ -1,23 +1,25 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Created by walbe on 25/02/2017.
+ * Created by Admin on 2/21/2017.
  */
-public class Degree {
+public class Role {
     private int id;
     private String name;
     private String label;
+    private Boolean status;
 
-    public Degree() {
+    public Role () {
     }
 
-    public Degree(int id, String name, String label) {
-        this.id = id;
-        this.name = name;
-        this.label = label;
+    public Role(int id, String name, String label, Boolean status) {
+        this.setId(id);
+        this.setName(name);
+        this.setLabel(label);
+        this.setStatus(status);
     }
 
     public int getId() {
@@ -44,11 +46,20 @@ public class Degree {
         this.label = label;
     }
 
-    public static Degree build(ResultSet resultSet) {
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public static Role build(ResultSet resultSet) {
         try {
-            return new Degree(resultSet.getInt("id"),
+            return new Role(resultSet.getInt("id"),
                     resultSet.getString("name"),
-                    resultSet.getString("label"));
+                    resultSet.getString("label"),
+                    resultSet.getBoolean("status"));
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

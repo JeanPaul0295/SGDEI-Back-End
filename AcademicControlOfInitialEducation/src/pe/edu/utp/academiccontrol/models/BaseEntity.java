@@ -15,4 +15,6 @@ public class BaseEntity {
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
+
+
 }
