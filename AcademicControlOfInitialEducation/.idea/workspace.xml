@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3929e530-7636-4a65-b6e7-8512781c0aa0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/CoursesEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/SubjectsEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Institution.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Degree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Course.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/InstitutionsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/People.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/PeoplesEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Qualification.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/QualificationAverage.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/RequestStatus.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/RequestStatus.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Role.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Role.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Student.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Student.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/StudentStatus.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/StudentStatus.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Subject.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java" afterPath="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +57,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="qualifications" />
+        <option name="myItemId" value="students" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -62,146 +68,8 @@
       <file leaf-file-name="InstitutionsEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-              <folding>
-                <marker date="1488593546313" expanded="true" signature="1584:1637" ph="SELECT MAX(i... institutions" />
-                <marker date="1488593546313" expanded="true" signature="2231:2322" ph="INSERT INTO institution... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoursesEntity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/CoursesEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Course.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-              <folding>
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1444#1445#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#1525#1526#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Qualification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1102#1103#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectsEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/SubjectsEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QualificationAverage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-              <folding>
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/RequestStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-149">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="-288">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -210,11 +78,51 @@
       <file leaf-file-name="PeoplesEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="208">
+              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Institution.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Institution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1488593546408" expanded="true" signature="2334:2445" ph="INSERT INTO people... " />
+                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1152#1153#0" expanded="true" />
+                <element signature="e#1190#1191#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1360#1361#0" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1578#1579#0" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1672#1673#0" expanded="true" />
+                <element signature="e#1718#1719#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1790#1791#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1904#1905#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -263,15 +171,6 @@
         <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Date.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/PeoplesEntity.java" />
         <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Institution.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/SubjectsEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java" />
-        <option value="$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/CoursesEntity.java" />
       </list>
     </option>
   </component>
@@ -305,8 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,6 +214,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AcademicControlOfInitialEducation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AcademicControlOfInitialEducation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AcademicControlOfInitialEducation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,7 +277,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -887,12 +800,11 @@
       <workItem from="1488289498594" duration="11349000" />
       <workItem from="1488577217314" duration="4070000" />
       <workItem from="1488591756052" duration="453000" />
-      <workItem from="1488592415903" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44493000" />
+    <option name="totallyTimeSpent" value="42543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,7 +821,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5044987" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286908" sideWeight="0.5044987" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -925,11 +837,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18316196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16195373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286908" sideWeight="0.49550128" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -938,7 +851,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286908" sideWeight="0.49550128" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -952,9 +864,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Course.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Qualification.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/QualificationAverage.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Roles.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Degree.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/EncryptionMD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="53" column="48" lean-forward="false" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Course.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Qualification.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/EncryptionMD5.java">
@@ -966,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Course.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Qualification.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/EncryptionMD5.java">
@@ -978,7 +904,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/EncryptionMD5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -988,7 +914,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d2ae4f4-74e8-424d-bba1-c646f76d557a/console.sql" />
     <entry file="uml://DATABASE/4d2ae4f4-74e8-424d-bba1-c646f76d557a">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1156,7 +1082,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/EncryptionMD5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1172,164 +1098,69 @@
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Subject.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Qualification.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/QualificationAverage.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/People.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Entities.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Student.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/institution.java" />
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Institution.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/InstitutionsEntity.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/Date.java" />
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/util/models/PeoplesEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Institution.java">
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="95" column="39" lean-forward="true" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-          <folding>
-            <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1756#1757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Qualification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/QualificationAverage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/RequestStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/SubjectsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="-288">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/PeoplesEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1488593546408" expanded="true" signature="2334:2445" ph="INSERT INTO people... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/InstitutionsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <marker date="1488593546313" expanded="true" signature="1584:1637" ph="SELECT MAX(i... institutions" />
-            <marker date="1488593546313" expanded="true" signature="2231:2322" ph="INSERT INTO institution... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/CoursesEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="208">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pe/edu/utp/academiccontrol/models/Institution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1904#1905#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

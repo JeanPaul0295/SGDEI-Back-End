@@ -1,6 +1,4 @@
-package pe.edu.utp.academiccontrol.models;
-
-import pe.edu.utp.academiccontrol.models.SubjectsEntity;
+package pe.edu.utp.academiccontrol.util.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,16 +10,16 @@ public class Qualification {
     private int id;
     private String month;
     private double qualifications;
-    private Subject subject;
+    private Institution institution;
 
     public Qualification() {
     }
 
-    public Qualification(int id, String month, double qualifications, Subject subject) {
-        this.id = id;
-        this.month = month;
-        this.qualifications = qualifications;
-        this.subject = subject;
+    public Qualification(int id, String month, double qualifications/*, Institution institution*/) {
+        this.setId(id);
+        this.setMonth(month);
+        this.setQualifications(qualifications);
+        //this.setInstitution(institution);
     }
 
     public int getId() {
@@ -48,23 +46,25 @@ public class Qualification {
         this.qualifications = qualifications;
     }
 
-    public Subject getSubject() {
-        return subject;
+    public Institution getInstitution() {
+        return institution;
     }
 
-    public void setSubject(Subject subject) {
-        this.subject = subject;
+    public void setInstitution(Institution institution) {
+        this.institution = institution;
     }
 
-    public static Qualification build(ResultSet resultSet, SubjectsEntity subjectsEntity) {
+    public static Qualification build(ResultSet resultSet) {
         try {
             return new Qualification(resultSet.getInt("id"),
                     resultSet.getString("month"),
-                    resultSet.getDouble("qualifications"),
-                    subjectsEntity.findById(resultSet.getInt("id")));
+                    resultSet.getDouble("qualifications"));
+                    //TODO:Implement getInstitutionEntity
+
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
     }
+
 }
