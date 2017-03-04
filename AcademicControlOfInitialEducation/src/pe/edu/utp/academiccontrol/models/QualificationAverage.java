@@ -1,4 +1,7 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
+
+import pe.edu.utp.academiccontrol.models.Subject;
+import pe.edu.utp.academiccontrol.models.SubjectsEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,18 +11,17 @@ import java.sql.SQLException;
  */
 public class QualificationAverage {
     private int id;
-    private Subject subject;
     private double qualificationAvg;
-    private Institution institution;
+    private Subject subject;
 
 
     public QualificationAverage() {
     }
 
-    public QualificationAverage(int id, double qualificationAvg/*, Institution institution*/) {
-        this.setId(id);
-        this.setQualificationAvg(qualificationAvg);
-        //this.setInstitution(institution);
+    public QualificationAverage(int id, double qualificationAvg, Subject subject) {
+        this.id = id;
+        this.qualificationAvg = qualificationAvg;
+        this.subject = subject;
     }
 
     public int getId() {
@@ -30,14 +32,6 @@ public class QualificationAverage {
         this.id = id;
     }
 
-    public Subject getSubject() {
-        return subject;
-    }
-
-    public void setSubject(Subject subject) {
-        this.subject = subject;
-    }
-
     public double getQualificationAvg() {
         return qualificationAvg;
     }
@@ -46,21 +40,19 @@ public class QualificationAverage {
         this.qualificationAvg = qualificationAvg;
     }
 
-    public Institution getInstitution() {
-        return institution;
+    public Subject getSubject() {
+        return subject;
     }
 
-    public void setInstitution(Institution institution) {
-        this.institution = institution;
+    public void setSubject(Subject subject) {
+        this.subject = subject;
     }
 
-    public static QualificationAverage build(ResultSet resultSet) {
+    public static QualificationAverage build(ResultSet resultSet, SubjectsEntity subjectsEntity) {
         try {
             return new QualificationAverage(resultSet.getInt("id"),
-                    resultSet.getDouble("qualifications"));
-                    //TODO:Implement getSubjectEntity
-                    //TODO:Implement getInstitutionEntity
-
+                    resultSet.getDouble("qualification_avg"),
+                    subjectsEntity.findById(resultSet.getInt("id")));
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

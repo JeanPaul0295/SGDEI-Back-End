@@ -1,4 +1,4 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
 
 import java.sql.Connection;
 

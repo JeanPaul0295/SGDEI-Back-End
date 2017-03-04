@@ -1,4 +1,4 @@
-package pe.edu.utp.academiccontrol.util.models;
+package pe.edu.utp.academiccontrol.models;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,18 +11,19 @@ public class Course {
     private String label;
     private String description;
     private double weight_exam;
+    private Boolean status;
 
     public Course() {
     }
 
-    public Course(int id, String name, String label, String description, double weight_exam) {
+    public Course(int id, String name, String label, String description, double weight_exam, Boolean status) {
         this.id = id;
         this.name = name;
         this.label = label;
         this.description = description;
         this.weight_exam = weight_exam;
+        this.status = status;
     }
-
 
     public int getId() {
         return id;
@@ -64,13 +65,22 @@ public class Course {
         this.weight_exam = weight_exam;
     }
 
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
     public static Course build(ResultSet resultSet) {
         try {
             return new Course(resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("label"),
                     resultSet.getString("description"),
-                    resultSet.getDouble("weight_exam"));
+                    resultSet.getDouble("weight_exam"),
+                    resultSet.getBoolean("status"));
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
