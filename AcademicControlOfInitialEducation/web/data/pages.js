@@ -1,0 +1,1 @@
+;(function(global) { global.DATA = [{"name":"US_002_GI - Register User","id_page":66736138,"mtime":1488413429,"parent":null,"version_of":null,"version_type":0,"main_version":"0","sort_order":0,"is_active":1,"documentationExists":false,"shot":"https:\/\/s3.amazonaws.com\/mfc.uxpin\/0\/d\/d\/5\/5f571cfdcca5e5a7a89c71645d138d3733c6.jpg"}]; })(window);
